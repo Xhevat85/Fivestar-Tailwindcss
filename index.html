@@ -1,0 +1,340 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fivestar</title>
+  
+    <!-- boxicons link -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+  
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/Foto/css/output.css">
+  </head>
+  <body>
+  
+    <!-- HEADER -->
+    <header class="absolute top-0 left-0 right-0 z-50 bg-transparent py-8 px-16 flex items-center justify-between">
+      <div class="container mx-auto flex items-center justify-between">
+        <img src="./assets/Foto/logo.png" class="w-28" alt="logo" />
+
+        <nav id="nav-menu" class="w-full xl:w-4/5 py-6 xl:py-0  hidden xl:block peer-checked:block">
+          <ul class="space-y-4 xl:space-y-0 flex flex-col xl:flex-row justify-between items-start xl:items-center mr-24 ml-24">
+            <li class="mr-4">
+              <a href="#" class="text-white relative group">
+                  për ne
+                  <span class="absolute bottom-[-10px] left-0 w-full h-0.5 bg-white transition-transform origin-left transform scale-x-0 group-hover:scale-x-100"></span>
+              </a>
+            </li>
+            <li class="mr-4">
+              <a href="#" class="text-white relative group">
+                  gjej klubin tënd
+                  <span class="absolute bottom-[-10px] left-0 w-full h-0.5 bg-white transition-transform origin-left transform scale-x-0 group-hover:scale-x-100"></span>
+              </a>
+             </li>
+             <li class="mr-4">
+               <a href="#" class="text-white relative group">
+                  anëtarësitë
+                  <span class="absolute bottom-[-10px] left-0 w-full h-0.5 bg-white transition-transform origin-left transform scale-x-0 group-hover:scale-x-100"></span>
+               </a>
+              </li>
+                <li class="mr-4">
+                  <a href="#" class="text-white relative group">
+                    blogu
+                    <span class="absolute bottom-[-10px] left-0 w-full h-0.5 bg-white transition-transform origin-left transform scale-x-0 group-hover:scale-x-100"></span>
+                  </a>
+                </li>
+                <li class="mr-4">
+                  <a href="#" class="text-white relative group">
+                      galerija
+                      <span class="absolute bottom-[-10px] left-0 w-full h-0.5 bg-white transition-transform origin-left transform scale-x-0 group-hover:scale-x-100"></span>
+                  </a>
+                </li>
+                <li class="mr-4">
+                  <a href="#" class="text-white relative group">
+                      ekipi
+                      <span class="absolute bottom-[-10px] left-0 w-full h-0.5 bg-white transition-transform origin-left transform scale-x-0 group-hover:scale-x-100"></span>
+                  </a>
+                </li>
+                <li class="mr-4">
+                  <a href="#" class="text-white relative group">
+                      kontakt
+                      <span class="absolute bottom-[-10px] left-0 w-full h-0.5 bg-white transition-transform origin-left transform scale-x-0 group-hover:scale-x-100"></span>
+                  </a>
+                </li>
+                <li class="mr-4">
+                  <a href="#" class="text-white relative group">
+                      myfivestar
+                      <span class="absolute bottom-[-10px] left-0 w-full h-0.5 bg-white transition-transform origin-left transform scale-x-0 group-hover:scale-x-100"></span>
+                  </a>
+                </li>
+          </ul>
+        </nav>
+
+        <div class="h-right flex items-center">
+          <a href="#" class="text-white hover:text-orange-400"><i class="ri-facebook-fill"></i></a>
+          <span class="divider mx-2 text-white">|</span>
+          <a href="#" class="text-white hover:text-orange-400"><i class="ri-twitter-fill"></i></a>
+          <span class="divider mx-2 text-white">|</span>
+          <a href="#" class="text-white hover:text-orange-400"><i class="ri-search-line"></i></a>
+          <span class="divider mx-2 text-white">|</span>
+          <a href="#" class="text-white hover:text-orange-400">En</a>
+
+          <!-- Hamburger Menu -->
+        <div class="xl:hidden">
+          <button id="hamburger-btn"        class="text-white focus:outline-none ml-4">
+          <i class="ri-menu-line text-2xl"></i>
+          </button>
+        </div>
+        </div>
+    </div>
+  </header>
+
+ <!-- Hamburger Menu Overlay -->
+<div id="hamburger-menu" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 z-50 hidden">
+  <div class="flex flex-col justify-start items-center h-full">
+    <div class="flex flex-col items-center justify-center mb-8">
+      <button id="close-btn" class="text-white focus:outline-none">
+        <i class="ri-close-line text-3xl"></i>
+      </button>
+    </div>
+    <nav class="flex flex-col items-center justify-center text-white">
+      <a href="#" class="text-white relative group mb-4">
+        Për ne
+        <span class="absolute bottom-[-10px] left-0 w-full h-0.5 bg-white transition-transform origin-left transform scale-x-0 group-hover:scale-x-100"></span>
+      </a>
+      <a href="#" class="text-white relative group mb-4">
+        Gjej klubin tënd
+        <span class="absolute bottom-[-10px] left-0 w-full h-0.5 bg-white transition-transform origin-left transform scale-x-0 group-hover:scale-x-100"></span>
+      </a>
+      <a href="#" class="text-white relative group mb-4">
+        Anëtarësitë
+        <span class="absolute bottom-[-10px] left-0 w-full h-0.5 bg-white transition-transform origin-left transform scale-x-0 group-hover:scale-x-100"></span>
+      </a>
+      <a href="#" class="text-white relative group mb-4">
+        Blogu
+        <span class="absolute bottom-[-10px] left-0 w-full h-0.5 bg-white transition-transform origin-left transform scale-x-0 group-hover:scale-x-100"></span>
+      </a>
+      <a href="#" class="text-white relative group mb-4">
+        Galerija
+        <span class="absolute bottom-[-10px] left-0 w-full h-0.5 bg-white transition-transform origin-left transform scale-x-0 group-hover:scale-x-100"></span>
+      </a>
+      <a href="#" class="text-white relative group mb-4">
+        Ekipi
+        <span class="absolute bottom-[-10px] left-0 w-full h-0.5 bg-white transition-transform origin-left transform scale-x-0 group-hover:scale-x-100"></span>
+      </a>
+      <a href="#" class="text-white relative group mb-4">
+        Kontakt
+        <span class="absolute bottom-[-10px] left-0 w-full h-0.5 bg-white transition-transform origin-left transform scale-x-0 group-hover:scale-x-100"></span>
+      </a>
+      <a href="#" class="text-white relative group mb-4">
+        Myfivestar
+        <span class="absolute bottom-[-10px] left-0 w-full h-0.5 bg-white transition-transform origin-left transform scale-x-0 group-hover:scale-x-100"></span>
+      </a>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  // JavaScript for hamburger menu functionality
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const closeBtn = document.getElementById('close-btn');
+  const hamburgerMenu = document.getElementById('hamburger-menu');
+
+  hamburgerBtn.addEventListener('click', function() {
+    hamburgerMenu.classList.toggle('hidden');
+  });
+
+  closeBtn.addEventListener('click', function() {
+    hamburgerMenu.classList.add('hidden');
+  });
+</script>
+    
+
+  <!-- home section design -->
+  <section class="bg-gray-100 py-20 px-10 relative">
+    <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('./assets/Foto/background.jpg');"></div>
+        <div class="container mx-auto relative z-10 text-center">
+         <h4 class="text-2xl font-thin text-white mt-48">FILLO SOT</h4>
+          <h1 class="text-4xl font-bold mt-10 text-white">
+           UDHËTIMI YT PËR JETË MË T'MIRË
+          </h1>
+          <a href="#" class="bg-transparent border border-white text-white font-bold py-2 px-6 rounded-sm mt-8 inline-block hover:bg-white hover:text-black transition duration-300">Join Us</a>
+        </div>
+  </section>
+  
+  <!-- feature section design -->
+<section class="py-36 px-16">
+  <div class="container mx-auto">
+    <div class="max-w-3xl mx-auto">
+      <h4 class="text-xl font-bold text-center">KUSH JEMI NE</h4>
+      <p class="mt-4 text-gray-700 text-center">
+        Ne jemi një rrjet i palestrave të fitnesit, të nxitur nga pasioni që të ofrojmë pajisje moderne, mjedis miqësor dhe hapësira të dizajnuara me stil. Ne besojmë se për t’i shtyer njerëzit të lëvizin çdo detaj ka rëndësi.
+      </p>
+    </div>
+  </div>
+</section>
+  
+  
+<!-- section për imazhin e Kosoves -->
+<section class="py-8 px-16 bg-black">
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+    <div class="max-w-lg">
+      <h5 class="text-xl font-bold text-center text-white">GJEJ KLUBIN TËND</h5>
+      <p class="mt-4 text-white">Me 7 klube (dhe në rritje e sipër). Në të gjitha qytetet e Kosoves Fivestar është më afer se sa mendoni. Zgjidhe vendin tënd, na provoni dhe ndryshoni jetën tuaj.</p>
+    </div>
+    <div class="max-w-lg mt-8 md:mt-0">
+      <img src="./assets/Foto/Kosova.png" alt="Kosova" class="w-full">
+    </div>
+  </div>
+</section>>
+  
+  
+  
+<!-- anetaresit -->
+<section class="py-8 px-16 mx-auto xl:w-4/5">
+  <div class="container mx-auto">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-xl font-bold mb-20 text-center">ANËTARËSITË</h2>
+      <div class="flex justify-start md:grid-cols-5 gap-x-2">
+        <a href="#" class="text-gray-800 hover:text-orange-400">FITSTAR</a>
+        <a href="#" class="text-gray-800 hover:text-orange-400">STUDENT</a>
+        <a href="#" class="text-gray-800 hover:text-orange-400">SENIOR</a>
+        <a href="#" class="text-gray-800 hover:text-orange-400">FAMILY</a>
+        <a href="#" class="text-gray-800 hover:text-orange-400">OTHER</a>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mt-6">
+        <img src="./assets/Foto/antarsi1.png" alt="foto e antareve" class="w-full h-full object-left hover:brightness-50 cursor-pointer">
+        <img src="./assets/Foto/antarsi2.png" alt="foto e antareve" class="w-full h-full object-cover hover:brightness-50 cursor-pointer">
+        <img src="./assets/Foto/antarsi3.png" alt="foto e antareve" class="w-full h-full object-cover hover:brightness-50 cursor-pointer">
+        <img src="./assets/Foto/antarsi4.png" alt="foto e antareve" class="w-full h-full object-right hover:brightness-50 cursor-pointer">
+      </div>
+      
+    </div>
+  </div>
+</section>
+  
+  
+  <!-- blogu -->
+<section class="py-20 px-16 bg-gray-100">
+  <div class="container mx-auto">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-xl font-bold mb-6 text-center">BLOGU</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Blog Post 1 -->
+        <div class="bg-white p-4 rounded-lg shadow-md hover:brightness-50 cursor-pointer">
+          <img src="./assets/Foto/Blogu/blogu1.jpg" alt="" class="w-full h-48 object-cover mb-4 rounded-md">
+          <h3 class="text-xl font-bold mb-2">Cila Vjen e Para: Kardio apo Trajnimi i Forcës</h3>
+          <p class="text-gray-700">A e keni vënë re ndonjëherë se si shumica e njerëzve kalojnë kohën në treadmill, biçikletë eliptike ose stacionare para ngritjes së peshave? Ju përpiqeni të kry...</p>
+        </div>
+        <!-- Blog Post 2 -->
+        <div class="bg-white p-4 rounded-lg shadow-md hover:brightness-50 cursor-pointer">
+          <img src="./assets/Foto/Blogu/blogu2.jpg" alt="" class="w-full h-48 object-cover mb-4 rounded-md">
+          <h3 class="text-xl font-bold mb-2">Ushtrimet që jua Krijojnë vijën V.</h3>
+          <p class="text-gray-700">Kjo tregon se i qëndroni besnik programit të ushtrimeve dhe stilit të jetës. Është e vërtetë se muskujt e barkut krijohen në kuzhinë, por krijimi i prerjes sek...</p>
+        </div>
+        <!-- Blog Post 3 -->
+              <div class="bg-white p-4 rounded-lg shadow-md hover:brightness-50 cursor-pointer">
+                <img src="./assets/Foto/Blogu/blogu3.jpg" alt="" class="w-full h-48 object-cover mb-4 rounded-md">
+                <h3 class="text-xl font-bold mb-2">Ushtrime Efektive për ju që Punoni në Kompjuter!</h3>
+                  <p class="text-gray-700">
+                    Kurrizi luan një rol shumë të rëndësishëm. Shëndeti shpinës tuaj është faktori i vetëm më i rëndësishëm në përcaktimin e shëndetit tuaj të përgjithshëm dhe jetë...
+                  </p>
+              </div>
+            <!-- Blog Post 4 -->
+              <div class="bg-white p-4 rounded-lg shadow-md hover:brightness-50 cursor-pointer">
+                <img src="./assets/Foto/Blogu/blogu4.jpg" alt="" class="w-full h-48 object-cover mb-4 rounded-md">
+                <h3 class="text-xl font-bold mb-2">Ushqimet me Proteinat më të mira për ndertimin e muskujve!</h3>
+                <p class="text-gray-700">
+                  Është e rëndësishme që të keni dietën me proteinat më të mira për ndërtimin e muskujve të shëndetshëm. Sasia e proteinave që kërkohet për cdo ditë varet nga kon...
+                </p>
+              </div>
+              <!-- Blog Post 5 -->
+            <div class="bg-white p-4 rounded-lg shadow-md hover:brightness-50 cursor-pointer">
+              <img src="./assets/Foto/Blogu/blogu5.jpg" alt="" class="w-full h-48 object-cover mb-4 rounded-md">
+              <h3 class="text-xl font-bold mb-2">Sa është e Nevojshme Zgjatja?</h3>
+                <p class="text-gray-700">
+                  Pavarësisht nivelit të fitnesit dhe moshës, secili individ mund të përfitojë nga ushtrimet e zgjatjeve. Numër i madh i hulumtimeve me persona të moshës mbi 70 .
+                </p>
+            </div>
+            <!-- Blog Post 6 -->
+            <div class="bg-white p-4 rounded-lg shadow-md hover:brightness-50 cursor-pointer">
+              <img src="./assets/Foto/Blogu/blogu6.jpg" alt="" class="w-full h-48 object-cover mb-4 rounded-md">
+              <h3 class="text-xl font-bold mb-2">Pezmatimi Muskulor apo Ndezja e Muskujve!!</h3>
+                <p class="text-gray-700">
+                  Secili program stërvitor në të cilin angazhohemi është mjaft sfidues, duke filluar prej përshtatjes së orarit për të ushtruar, caktimit të qëllimeve, rutinës së.....
+                </p>
+          </div>
+      </div>
+  </div>
+</section>
+  
+  
+  <!-- Fitnes -->
+<section class="py-20 px-10">
+  <div class="container mx-auto">
+    <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      <img src="./assets/Foto/fitnes2.jpg" alt="" class="w-full rounded-lg shadow-md hover:brightness-50 cursor-pointer">
+      <img src="./assets/Foto/fitnes3.jpg" alt="" class="w-full rounded-lg shadow-md hover:brightness-50 cursor-pointer">
+      <img src="./assets/Foto/fitnes4.jpg" alt="" class="w-full rounded-lg shadow-md hover:brightness-50 cursor-pointer">
+    </div>
+  </div>
+</section>
+
+
+<!-- footer -->
+<section class="bg-black footer grid grid-cols-2 md:grid-cols-3 gap-5 mt-5 pb-6 pt-12 pl-5">
+  <div class="footer-box">
+    <h3 class="text-xl font-semibold mb-8 text-white">LINQET</h3>
+    <a href="#" class="block mb-2 text-white hover:text-gray-700">Ballina</a>
+    <a href="#" class="block mb-2 text-white hover:text-gray-700">Për ne</a>
+    <a href="#" class="block mb-2 text-white hover:text-gray-700">Gjej klubin tënd</a>
+    <a href="#" class="block mb-2 text-white hover:text-gray-700">Blogu</a>
+    <a href="#" class="block mb-2 text-white hover:text-gray-700">Kontakt</a>
+    <a href="#" class="block mb-2 text-white hover:text-gray-700">Pyetje dhe Ndihmë</a>
+    <a href="#" class="block mb-2 text-white hover:text-gray-700">Kushtet e anëtarësisë</a>
+    <a href="#" class="block mb-2 text-white hover:text-gray-700">Rregullat në Fitness</a>
+  </div>
+
+  <div class="footer-box mr-14">
+    <h3 class="text-xl font-semibold mb-8 text-white">KONTAKT</h3>
+    <p class="mb-4 text-white">Adresa: Rr. Ahmet Krasniqi “Arbëri”<br>10000 Prishtinë, Republika e Kosovës</p>
+    <p class="mb-4 text-white">Tel: +383 38 40 50 60</p>
+    <p class="mb-4 text-white">Web: www.fivestarfitness.eu</p>
+    <p class="text-white">Email: info@fivestarfitness.eu</p>
+  </div>
+
+  <div class="md:footer-box text-center md:text-left md:mx-auto ml-4 mx-auto">
+    <h3 class="text-xl font-semibold mb-8 text-white">ABONOHU PER BULETIN</h3>
+    <form action="" class="mb-4">
+      <div class="input-with-button flex flex-col md:flex-row items-center">
+        <input type="email" placeholder="e-mail" required class="w-72 md:w-auto px-4 py-2 mb-2 md:mb-0 rounded-s bg-white text-white">
+        <input type="submit" value="ABONOHU" class="buton py-2 px-4 bg-black text-white rounded-none cursor-pointer border border-white transition duration-300 hover:bg-gray-700 hover:border-transparent">
+      </div>
+    </form>
+
+    <div class="social flex justify-center md:justify-start">
+      <a href="#" class="mr-2 flex items-center justify-center h-12 w-12 bg-gray-800 text-white rounded-md transition duration-300 hover:bg-gray-700"><i class="ri-instagram-fill text-xl"></i></a>
+      <a href="#" class="mr-2 flex items-center justify-center h-12 w-12 bg-gray-800 text-white rounded-md transition duration-300 hover:bg-gray-700"><i class="ri-twitter-fill text-xl"></i></a>
+      <a href="#" class="flex items-center justify-center h-12 w-12 bg-gray-800 text-white rounded-md transition duration-300 hover:bg-gray-700"><i class="ri-facebook-fill text-xl"></i></a>
+    </div>
+  </div>
+</section>
+
+  </body>
+  </html>
